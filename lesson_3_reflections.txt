@@ -7,4 +7,8 @@ When I want to share it with others.
 
 Multiple people may be working on the same repo for example. Automatic pulls will be painful, not meaningful and might mess up our version. Manual pull will help us choose when we want to update or look at others changes. 
 
+-- Describe the differences between forks, clones, and branches. When would you use one instead of another?
 
+Forks - happen entirely on GitHub. We use this when we want to copy some one else's repo and make changes to it while crediting the original repo owner. 
+Clone - GitHub to local or local to loca copy of repositories. 
+Branches - start a new path for debugging or new feature development.
