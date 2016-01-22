@@ -11,3 +11,7 @@ Staging area is a part of Git. It keeps objects that are tracked in the working 
 -- How can you use the staging area to make sure you have one commit per logical change?
 
 Run a git diff --staged to see change in staged version versus repository version. Compare that with the the working directory version. Depending on these comparisons make a decision of what a logical change unit is and make the commmit accordingly. Note that we do not have a way, via git diff, to compare working directory version and repository version. 
+
+-- What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+When trying out an experimental feature while still having the capability to rollback to the "main" version. This way if the experimental feature is successful we can merge it with the main branch. If the feature is not successful we can just checkout the main branch and continue with it. 
