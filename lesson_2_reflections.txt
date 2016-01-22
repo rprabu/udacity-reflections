@@ -14,4 +14,12 @@ Run a git diff --staged to see change in staged version versus repository versio
 
 -- What are some situations when branches would be helpful in keeping your history organized? How would branches help?
 
-When trying out an experimental feature while still having the capability to rollback to the "main" version. This way if the experimental feature is successful we can merge it with the main branch. If the feature is not successful we can just checkout the main branch and continue with it. 
+When trying out an experimental feature while still having the capability to rollback to the "main" version. This way if the experimental feature is successful we can merge it with the main branch. If the feature is not successful we can just checkout the main branch and continue with it.
+
+
+-- How do the diagrams help you visualize the branch structure?
+They help us keep track of reachability and hence alert us to the possibility if stray commits.  
+
+
+-- What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+The specified branches are merged into the current branch. The merged branch will have as its parents the branches participating in the merge. Specifically pointers to the final commits/tips of the participating branches are maintained. We want to access all the commits in the branches and hence this representation.
