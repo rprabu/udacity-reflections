@@ -7,3 +7,7 @@ A .git directory is created in the directory git init is run in. Doing this help
 
 Staging area is a part of Git. It keeps objects that are tracked in the working directory. Files in the staging area are not in the repository yet. It is a temporary place to record/track changes made.
 
+
+-- How can you use the staging area to make sure you have one commit per logical change?
+
+Run a git diff --staged to see change in staged version versus repository version. Compare that with the the working directory version. Depending on these comparisons make a decision of what a logical change unit is and make the commmit accordingly. Note that we do not have a way, via git diff, to compare working directory version and repository version. 
