@@ -18,8 +18,19 @@ When trying out an experimental feature while still having the capability to rol
 
 
 -- How do the diagrams help you visualize the branch structure?
+
 They help us keep track of reachability and hence alert us to the possibility if stray commits.  
 
 
 -- What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
 The specified branches are merged into the current branch. The merged branch will have as its parents the branches participating in the merge. Specifically pointers to the final commits/tips of the participating branches are maintained. We want to access all the commits in the branches and hence this representation.
+
+-- What are the pros and cons of Git’s automatic merging vs. always 
+doing merges manually?
+
+Automatic merging does not have contextual information. Always merging manually incorporates contextual information everytime but the user has to spend more time to validate all pieces of the merges. With some automation Git helps focus the user to relevant areas that require resolution. 
+
+
+
+
